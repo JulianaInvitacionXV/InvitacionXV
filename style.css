@@ -27,14 +27,20 @@ body {
 /* Overlay inicial */
 #entryOverlay {
   position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(15,23,34,0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
   z-index: 9999;
-  animation: fadeInOverlay 1.2s ease forwards;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* << mueve hacia arriba */
+  align-items: center;          /* centrado horizontal */
+  padding-top: 40px;            /* distancia desde arriba */
 }
+
 
 #entryOverlay .panel {
   background: white;
@@ -498,4 +504,80 @@ footer {
 #confirmacion.glass-section:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* Ajuste general de la sección */
+#rsvp {
+  text-align: center;
+}
+
+/* Texto descriptivo centrado */
+.rsvp-text {
+  font-size: 1rem;
+  margin: 15px auto 25px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* Contenedor del botón (para centrar) */
+.rsvp-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Estilos del botón */
+.rsvp-btn {
+  display: inline-block;
+  background: #c9184a;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.rsvp-btn:hover {
+  background: #a0133b;
+  transform: scale(1.05);
+}
+
+/* Sección Confirmación de asistencia centrada */
+#rsvp {
+  display: flex;
+  flex-direction: column; /* Apila título, texto y botón */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;     /* Centra horizontalmente */
+  text-align: center;      /* Centra el texto */
+  max-width: 900px;        /* Limita el ancho */
+  margin: 0 auto;          /* Centra la sección en la página */
+  padding: 2.5rem 1rem;    /* Espaciado interno */
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+  animation: floatCard 1.2s ease-out forwards;
+}
+
+/* Ajusta el contenedor del botón */
+.rsvp-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  margin-top: 15px;
+}
+
+/* Ajusta el botón */
+.rsvp-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.rsvp-btn:hover {
+  transform: scale(1.05);
 }
