@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invitación XV Años - Juliana</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- SwiperJS (galería) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+
+  <!-- AOS (animaciones al hacer scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+
+</head>
+<body>
+
+  <!-- Pantalla de entrada -->
+  <div id="entryOverlay">
+    <div class="panel">
+      <h3>Invitación XV Juliana</h3>
+      <p class="muted">Bienvenido</p>
+      <button id="enterBtn">Entrar</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="card">
+      <div class="info">
+        <h1 class="title">Mis XV Años - JULIANA</h1> <br> 
+        <p class="subtitle">Cuenta Regresiva</p> <br>
+        <div class="countdown" id="countdown">Cargando fecha...</div>
+      </div>
+      <div class="photo">
+        <img src="images/foto-portada.jpg" alt="foto">
+      </div>
+    </div>
+  </section>
+  <!-- Sección mensaje principal -->
+   
+<section class="mensaje" data-aos="fade-up">
+  <div class="container">
+    <p class="intro">
+      ¡Vamos a bailar y divertirnos!
+    </p>
+    <p class="texto">
+      Con ilusión y mucha emoción, he esperado este día tan especial. <br>
+Te invito a compartirlo conmigo.
+    </p>
+    <div class="icono"><i data-lucide="party-popper"></i></div>
+
+    <h2 class="titulo">Celebra conmigo mis XV años</h2>
+    <h1 class="nombre">Juliana</h1>
+  </div>
+</section>
+
+<!-- Segunda parte -->
+<section class="mensaje" data-aos="fade-up" style="background:#fff8fb;">
+  <div class="container">
+    <p class="texto">
+      Tu presencia es fundamental.
+    </p>
+    <div class="icono"><i data-lucide="calendar-heart"></i></div>
+    <h2 class="titulo">Celebremos juntos el próximo:</h2>
+    <h1 class="fecha">17 de Enero 2025</h1>
+    <p class="hora">17:45 hrs</p>
+  </div>
+</section>
+
+
+<!-- misa y recepcion -->
+
+<section class="evento" data-aos="fade-up">
+  <div class="card">
+    <h2 class="titulo-seccion">Detalles del Evento</h2>
+
+    <div class="detalle">
+      <div class="icono"><i data-lucide="church"></i></div>
+      <h3 class="subtitulo">Ceremonia Religiosa</h3>
+      <p><strong>Parroquia del Señor de las Maravillas</strong></p>
+      <p>Avenida Cuauhtémoc s/n, Col. Maravillas, 57410 Nezahualcóyotl</p>
+      <p><strong>Hora:</strong> 17:45 hrs</p>
+      <div id="map-church" class="mapa"></div>
+    </div>
+
+    <div class="detalle">
+      <div class="icono"><i data-lucide="map-pin"></i></div>
+      <h3 class="subtitulo">Recepción</h3>
+      <p><strong>Salón de Eventos Metrópolis</strong></p>
+      <p>Avenida Adolfo López Mateos #608, Col. El Palmar, 57300 Nezahualcóyotl</p>
+      <p><strong>Entrada:</strong> 19:30 hrs</p>
+      <div id="map-hall" class="mapa"></div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+
+  <!-- Sección Mi Familia -->
+<section class="familia" data-aos="fade-up">
+  <div class="card">
+    <h2 class="titulo-seccion">Mi Familia</h2>
+
+    <div class="familia-grid">
+
+      <!-- Papás -->
+      <div class="fam-item">
+        <img src="images/papas.jpeg" alt="Mis papás">
+        <h3 class="fam-titulo">Mis Papás</h3>
+        <p class="fam-nombre">Julio César Romero Narvaez<br>Ana Lilia Escobedo Manriquez</p>
+      </div>
+
+      <!-- Madrina -->
+      <div class="fam-item">
+        <img src="images/madrina.jpeg" alt="Madrina">
+        <h3 class="fam-titulo">Mi Madrina</h3>
+        <p class="fam-nombre">Sonia Gutiérrez Manriquez</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- === Sección: Mesa de Regalos === -->
+<section id="mesaRegalos" class="glass-section" data-aos="fade-up">
+  <h2 class="section-title">Mesa de Regalos</h2>
+
+  <div class="gift-content">
+    <div class="gift-icon-wrapper" data-aos="zoom-in">
+      <i class="fas fa-gift gift-icon"></i>
+    </div>
+
+    <p class="gift-text">
+      Si deseas obsequiarme algo en este día tan especial, he preparado una mesa de regalos
+      donde puedes encontrar opciones que me encantarán. 
+      ¡Gracias por tu cariño!
+    </p>
+
+    <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51809450" 
+       target="_blank" 
+       class="gift-button" 
+       data-aos="zoom-in">
+      Ir a la mesa de regalos
+    </a>
+  </div>
+</section><br><br><br>
+
+
+<!-- === Sección: Un poco de mi historia === -->
+ <!-- HISTORIA -->
+  <section id="miHistoria" class="glass-section" data-aos="fade-up">
+    <h2 class="section-title">Un poco de mi historia</h2>
+    <p class="history-text">
+      Cada etapa de mi vida ha estado llena de personas, momentos y aprendizajes.
+    </p>
+
+    <div class="history-collage" data-aos="zoom-in">
+      <img src="images/historia1.jpeg">
+      <img src="images/historia2.jpeg">
+      <img src="images/historia3.jpeg">
+      <img src="images/historia4.jpeg">
+      <img src="images/historia5.jpeg">
+      <img src="images/historia6.jpeg">
+      <img src="images/historia7.jpeg">
+      <img src="images/historia8.jpeg">
+      <img src="images/historia9.jpeg">
+      <img src="images/historia10.jpeg">
+      <img src="images/historia11.jpeg">
+      <img src="images/historia12.jpeg">
+    </div>
+  </section>
+
+
+
+
+
+      <!-- prgrma -->
+
+<section class="programa" data-aos="fade-up">
+  <div class="programa-card">
+
+    <h2 class="titulo-seccion">Programa del Evento</h2>
+
+    <div class="timeline">
+
+      <div class="step">
+        <div class="circle"><i data-lucide="church"></i></div>
+        <div class="info">
+          <h3>Misa</h3>
+          <p>5:45 pm</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i data-lucide="door-open"></i></div>
+        <div class="info">
+          <h3>Entrada al Salón</h3>
+          <p>7:30 pm</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i data-lucide="sparkles"></i></div>
+        <div class="info">
+          <h3>Presentación</h3>
+          <p>8:00 pm</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i data-lucide="utensils"></i></div>
+        <div class="info">
+          <h3>Cena</h3>
+          <p>9:00 pm</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i data-lucide="heart-handshake"></i></div>
+        <div class="info">
+          <h3>Ceremonia</h3>
+          <p>10:30 pm</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="circle"><i data-lucide="drum"></i></div>
+        <div class="info">
+          <h3>Batucada</h3>
+          <p>12:30 am</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- === Sección: Confirmar Asistencia === -->
+<section id="confirmacion" class="glass-section" data-aos="fade-up">
+  <h2 class="section-title">Confirmar asistencia</h2>
+
+  <p class="rsvp-text">
+    ¡Tu presencia es muy importante para nosotros!  
+    Por favor confirma tu asistencia dando clic en el siguiente botón:
+  </p>
+
+  <a 
+    href="https://forms.gle/qK7PuhuaaJwu2mKA9" 
+    target="_blank" 
+    class="rsvp-btn" 
+    data-aos="zoom-in"
+  >
+    Confirmar asistencia CLICK AQUI!
+  </a>
+</section>        
+<br><br><br>
+      <button id="playToggle" class="music-btn">▶︎ Reproducir / Pausar</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>XV JULIANA</p>
+  </footer>
+
+  <audio id="bgMusic" loop>
+    <source src="music/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Librerías -->
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYNd8r6DFkKUeIQ-enes0Gb4n1Cl25h3k&callback=initMap"></script>
+
+  <!-- Tu script -->
+  <script src="script.js"></script>
+  <script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
