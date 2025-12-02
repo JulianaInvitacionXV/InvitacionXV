@@ -582,8 +582,3 @@ footer {
   transform: scale(1.05);
 }
 
-.foto-grande {
-  width: 140%;
-  max-width: none;
-  transform: scale(1.2);
-}
